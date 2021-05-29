@@ -3,12 +3,12 @@ package com.ds.queue;
 public class MyQueueUsingLinkList<E> {
 
 	private int maxsize; // Max size of queue
-	private int front;// to keep track of elememt removal from the front of
+	private int front;// to keep track of element removal from the front of
 						// queue
-	private int rear; // to keep track of elememt insertion at end of queue
+	private int rear; // to keep track of element insertion at end of queue
 	private int nElement; // No of element added in queue
 
-	// Underleying data-structrue to hold data
+	// Underlying data-structure to hold data
 	private Node<E> head;
 	private Node<E> tail;
 

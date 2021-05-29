@@ -34,10 +34,10 @@ public class LRUCacheUsingQueueHashset {
 	// To store object in cache
 	private Deque<Integer> doublyQueue;
 
-	// To Store referance of object in cache
+	// To Store reference of object in cache
 	private HashSet<Integer> hashSet;
 
-	// Maximum capcity of cache
+	// Maximum capacity of cache
 	private final int CACHE_SIZE;
 
 	public LRUCacheUsingQueueHashset(int size) {

@@ -20,12 +20,14 @@ public class App {
 		
 		System.out.println("Insert Node at the end of List");
 		singlyLinkedList.insertLast(500);
+		singlyLinkedList.insertLast(600);
 		singlyLinkedList.iterateList();
 		
 		System.out.println("Delete Node at the end of List");
 		Node temp = singlyLinkedList.deleteLast();
 		
 		temp.displayNode();
+		singlyLinkedList.iterateList();
 	}
 
 }

@@ -75,7 +75,7 @@ public class RotateRightSL {
 			
 		}
 		
-		//last node next pointing to old head (i.e 1st elememt in LS)
+		//last node next pointing to old head (i.e 1st element in LS)
 		lastNode.setNext(head);
 		//kth node next become new head
 		head = kthNode.getNext();

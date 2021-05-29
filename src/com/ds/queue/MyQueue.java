@@ -3,10 +3,10 @@ package com.ds.queue;
 public class MyQueue<E> {
 
 	private int maxsize; // Max size of queue
-	private int front;// to keep track of elememt removal from the front  of queue
-	private int rear; // to keep track of elememt insertion at end of queue
+	private int front;// to keep track of element removal from the front  of queue
+	private int rear; // to keep track of element insertion at end of queue
 	private int nElement; // No of element added in queue
-	private Object[] queueArray; // Underleying datastructrue to hold data
+	private Object[] queueArray; // Underlying data structure to hold data
 	
 	
 	public MyQueue(int maxSize){

@@ -54,7 +54,7 @@ public class RotateLeftSL {
 			// reduce no of iteration 
 			k = k % size;
 		}
-		// below conditon no rotation requried 
+		// below condition no rotation required 
 		if (head == null || k == 0 || k == size){
 			
 			return head ;
@@ -69,7 +69,7 @@ public class RotateLeftSL {
 			kthNode = kthNode.getNext();
 		}
 		
-		// set last node's next  point to old frist
+		// set last node's next  point to old first
 		lastNode.setNext(head);
 		// head is setting up kth node next
 		head = kthNode.getNext();

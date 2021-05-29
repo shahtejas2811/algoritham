@@ -3,17 +3,25 @@ package com.ds.SinglyLinkedList;
 public class SinglyLinkedList {
 
 	private Node head;
+	private Node tail;
 
 	public void insertFirst(int data) {
 
 		Node newNode = new Node();
 
 		newNode.setData(data);
-		// New Node also pointing to the node which is already pointed by First
-		// Node
-		newNode.setNext(head);
-		// Now first is pointed by newNode
-		head = newNode;
+
+		if (head == null) {
+			head = newNode;
+			tail = newNode;
+		} else {
+			// New Node also pointing to the node which is already pointed by
+			// First
+			// Node
+			newNode.setNext(head);
+			// Now first is pointed by newNode
+			head = newNode;
+		}
 
 	}
 
@@ -25,23 +33,22 @@ public class SinglyLinkedList {
 	}
 
 	public void insertLast(int data) {
-		Node current = head;
-		while (current.getNext() != null) {
-			current = current.getNext();
-		}
 		Node newNode = new Node();
+		
 		newNode.setData(data);
 		newNode.setNext(null);
-		current.setNext(newNode);
+		
+		tail.setNext(newNode);
+		tail = newNode;
 
 	}
 
 	public Node deleteLast() {
 		Node current = head;
-		while (current.getNext() != null) {
+		while (current.getNext().getNext() != null) {
 			current = current.getNext();
 		}
-		Node tmpNode = current;
+		Node tmpNode = current.getNext();
 		current.setNext(null);
 		return tmpNode;
 	}
@@ -67,6 +74,7 @@ public class SinglyLinkedList {
 		}
 		System.out.println();
 	}
+	
 	public Node getHead() {
 		return head;
 	}

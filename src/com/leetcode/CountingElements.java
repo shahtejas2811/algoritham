@@ -7,7 +7,7 @@ import java.util.Map.Entry;
 
 /**
  * Given an integer array arr, count element x such that x + 1 is also in arr.
- * If there’re duplicates in arr, count them seperately.
+ * If there’re duplicates in arr, count them separately.
  * 
  * Example 1:
  * Input: arr = [1,2,3]
